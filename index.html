@@ -36,53 +36,6 @@
 .strip .tile img {
   margin: auto;
 }
-
-/* Mobile optimization: preserve all existing functionality while fitting narrow screens. */
-@media (max-width: 600px) {
-  body { overflow-x: hidden; }
-  .app { width: 100%; max-width: 100%; margin: 10px auto; padding: 0 8px; }
-  .top { align-items: stretch; gap: 9px; margin-bottom: 10px; }
-  .top > div:first-child { min-width: 0; flex: 1 1 100%; }
-  .logo { font-size: clamp(19px, 6vw, 27px); letter-spacing: -1px; line-height: 1.15; }
-  .sub { font-size: 10px; line-height: 1.45; }
-  .actions { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
-  .btn { min-height: 38px; padding: 8px 9px; font-size: 12px; line-height: 1.2; white-space: normal; }
-  .workspace { display: flex; flex-direction: column; gap: 10px; }
-  .panel { width: 100%; padding: 8px; border-radius: 10px; }
-  .stage-wrap { width: 100%; max-width: 100%; border-width: 3px; }
-  .stage-hint { left: 6px; bottom: 6px; max-width: calc(100% - 12px); padding: 5px 6px; font-size: 9px; }
-  .item { width: 22%; min-width: 28px; }
-  .text-item { min-width: 45px; max-width: 90%; padding: 3px 6px; font-size: clamp(17px, 6vw, 28px); }
-  .handle { width: 16px; height: 16px; right: -7px; bottom: -7px; }
-  .rotate-dot { width: 13px; height: 13px; top: -20px; }
-  .library { margin-top: 10px; }
-  .library-head { align-items: flex-start; flex-wrap: wrap; gap: 3px 8px; }
-  .library-head h3 { font-size: 13px; }
-  .library-head span { font-size: 9px !important; }
-  .strip { gap: 7px; padding: 6px 2px 9px; }
-  .tile { flex: 0 0 76px; width: 76px; height: 91px; padding: 4px; border-radius: 7px; }
-  .tile img { max-width: 100%; max-height: 62px; }
-  .tile span { font-size: 9px; }
-  .side { display: block; }
-  .side h3 { font-size: 14px; margin-bottom: 8px; }
-  .status { font-size: 11px; padding: 8px; }
-  .text-controls { grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
-  .text-controls input, .text-controls select { font-size: 12px; padding: 8px 6px; }
-  .side label { font-size: 11px; margin: 10px 0 4px; }
-  .side input[type=range] { min-height: 22px; }
-  .side > .btn { width: 100%; margin-top: 7px; }
-  .help { font-size: 10px; line-height: 1.55; margin-top: 9px; }
-  .footer-note { font-size: 9px; line-height: 1.5; margin: 10px 4px; }
-}
-
-@media (max-width: 360px) {
-  .actions { grid-template-columns: 1fr; }
-  .text-controls { grid-template-columns: 1fr; }
-  .text-controls .wide, .vertical-button { grid-column: 1; }
-  .tile { flex-basis: 70px; width: 70px; height: 86px; }
-  .tile img { max-height: 57px; }
-}
-
 </style>
 </head>
 <body>
